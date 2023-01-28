@@ -33,12 +33,7 @@ for t = 0:0.01:1
     Alpha3 = round(Alpha3);
     Alpha4 = (l2*alpha2*sin(th2-th32)+l2*omega2^2*cos(th2-th32)+l3*Omega3^2+l4*Omega4^2*cos(th41-th32))/(l4*sin(th41-th32));
     Alpha4 = round(Alpha4)
-%     
-%     subplot(2,1,1)
-%     plot(th2,Alpha3);
-%     hold on
-% 
-%     subplot(2,1,2)
+
     plot([0 l2*cos(th2)],[0 l2*sin(th2)],'o-','linewidth',2); hold on
     plot([0 l1],[0 0],'o-','linewidth',2); hold on
     plot([l1 l1+l4*cos(th41)],[0 l4*sin(th41)],'o-','linewidth',2); hold on
